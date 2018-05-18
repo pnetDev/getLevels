@@ -2,15 +2,13 @@
 
 script=/opt/pollUpstreamErrors/pollAllOnlineModemsListIndex.py
 
-$script johns2 1182
-$script johns2 1187
-$script wmtn5 398
 $script coolg3 1182
 $script coolg3 1206
 $script coolg3 1231
 $script coolg3 1232
 $script coolg3 1255
 $script coolg3 1278
+$script johns2 1208
 $script johns2 1182
 $script johns2 1206
 $script johns2 1207
@@ -41,6 +39,7 @@ $script wmtn5 399
 $script wmtn5 401
 $script wmtn5 402
 $script wmtn6 1182
+$script wmtn5 398
 $script fmtn1 7
 $script fmtn2 9
 $script fmtn3 397

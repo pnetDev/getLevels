@@ -109,7 +109,7 @@ for cmIP in modems:
 	UsErrors = getUpstreamErrors(cmts,cmIndex)
 	cmIfIndex = getCmIfIndex(cmts,cmIndex)
 	#print mac, cmIP, "DSFREQ:", dsFreq, "USFREQ:", usFreq, "PWR:", DSP, "SNR:", SNR, "TX PWR:", TXP, "Packets:",UNR, "Corrected:", COR, "Down Uncorrected:", UNC, "Up Uncorrected:", UsErrors
-	print cmts,mac,cmIP,dsFreq,usFreq,DSP,SNR,TXP,UNR,COR,UNC,UsErrors,"ifIndex:",cmIfIndex
+	print "1st Check",cmts,mac,cmIP,dsFreq,usFreq,DSP,SNR,TXP,UNR,COR,UNC,UsErrors,"ifIndex:",cmIfIndex
 	firstStats.append([cmts,mac,cmIP,dsFreq,usFreq,DSP,SNR,TXP,UNR,COR,UNC,UsErrors,cmIfIndex])
 
 print firstStats
@@ -203,7 +203,7 @@ for data in range(modemCount):
 	upHecWordsDelta = int(UsErrors2) - int(UsErrors1)
 
 	#print "Counter Delta"
-	print cmts1,mac1,cmIP1,dsFreq1,usFreq1,DSP1,SNR1,TXP1,"goodWordsDelta:", goodWordsDelta, "downHecWordsDelta:" , downHecWordsDelta, "downHecPercent:", downHecPercent, "upHecWordsDelta:", upHecWordsDelta,"IfIndex:",cmIfIndex1
+	print cmts1,mac1,cmIP1,dsFreq1,usFreq1,DSP1,SNR1,TXP1,UNR1,COR1,UNC1,UsErrors1,DSP2,SNR2,TXP2,UNR2,COR2,UNC2,UsErrors2,"goodWordsDelta:", goodWordsDelta, "downHecWordsDelta:" , downHecWordsDelta, "downHecPercent:", downHecPercent, "upHecWordsDelta:", upHecWordsDelta,"IfIndex:",cmIfIndex1
 	 
 	#print  cmts1,mac1,mac2,cmIP1,dsFreq1,usFreq1,DSP1,SNR1,TXP1,UNR1,COR1,UNC1,UsErrors1 + "\t" +  mac2,dsFreq2,DSP2,SNR2,TXP2,UNR2,COR2,UNC2,UsErrors2
 
