@@ -22,9 +22,11 @@ unc=".1.3.6.1.2.1.10.127.1.1.4.1.4.3"
 
 
 def getOid(oid):
-	snmpData = snmp_get(oid, hostname=cmIP, community='private', version=2)
-	return snmpData.value
-
+	try:
+		snmpData = snmp_get(oid, hostname=cmIP, community='private', version=2)
+		return snmpData.value
+	except:
+		return "readError"
 
 def getUpstreamErrors(mac,cmts):
         ## This function will:
